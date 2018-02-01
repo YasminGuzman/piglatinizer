@@ -3,15 +3,19 @@
 // begins with a vowel you just add ay to the end. For example, pig becomes
 // igpay, banana becomes ananabay, and aadvark becomes aadvarkay.
 // CREATE THE FUNCTIONS BELOW
-
+/*global $*/
 // Document Ready Function. All of your jQuery should go in here. 
 $( document ).ready(function() {
-  
+  $("#go").click(function(){
+  var Usersays= $("#input").val();
+  $("#message").text(Usersays + "ay")
+	
 
 
 
+
+    });
 });
-
 
 // Create the wordToPigLatin function that takes a word as a parameter and returns a transfromed word. 
 
