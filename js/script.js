@@ -8,9 +8,14 @@
 $( document ).ready(function() {
   $("#go").click(function(){
   var Usersays= $("#input").val();
-  $("#message").text(Usersays + "ay")
-	
-
+  var wordarray= Usersays.split(" ");	
+  for(var i=0; i<wordarray.length; i++){
+    var word= wordarray[i];
+  }
+  var prefix = word.slice(0,1);
+  var suffix= word.slice(1, word.length);
+  var result = suffix + prefix + "ay";
+  console.log(result);
 
 
 
